@@ -1,0 +1,247 @@
+/* Header */
+body {
+    margin:0;
+    background-color:gold;
+}
+header {
+    width: 100%;
+    margin:0;
+    padding:0;
+    background-color: navy;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-top:10px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+header nav {
+    background-color: navy;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+header nav a {
+    display:block;
+    justify-content: center;
+    background-color: gold;
+    color: navy;
+    width: 100px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px; 
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    list-style-type: none;
+}
+
+header nav a:hover {
+    background-color: blue;
+    color: yellow;
+}
+
+header h1 {
+    display: block;
+    position:absolute;
+    position:relative;
+    text-align:center;
+    margin-top:0;
+    margin-bottom:0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 80px;
+    color:gold;
+}
+
+header p {
+    display:block;
+    position:relative;
+    text-align: center;
+    margin-top:0;
+    font-size: 30px;
+    color:white;
+}
+
+/* Body-Main */
+
+body h1 {
+    color:gold;
+    margin-top:100px;
+    margin-left:20px;
+    margin-bottom:0;
+}
+
+body p {
+    color:gold;
+    margin-left:20px;
+    margin-top:0;
+    margin-bottom:50px;
+}
+.football-logo {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 600px;
+    height: 300px;
+    border: 20px solid navy;
+}
+
+.fblink {
+    display:block;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:50px;
+
+}
+
+.basketball-logo {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 600px;
+    height: 300px;
+    border: 20px solid navy;
+}
+
+.bblink {
+    display:block;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:50px;
+}
+
+.baseball-logo {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 600px;
+    height: 300px;
+    border: 20px solid navy;
+}
+
+.bsblink {
+    display:block;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:50px;
+}
+
+body a {
+    font-size:larger;
+    color: navy;
+}
+
+article {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+article li {
+    width:60%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    color:gold;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: navy;
+
+}
+
+article a {
+    font-size:20px;
+    color:navy;
+    background-color: gold;
+    margin-bottom:20px
+}
+
+article img {
+    height: 400px;
+    width: 600px;
+    border: 5px solid gold;
+    margin-top:40px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+/* Footer */
+footer {
+    margin-top:100px;
+    background-color: navy;
+    width:100%;
+}
+
+.footerLogo {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.siteLink {
+    padding-top: 0px;
+    padding-left:0px;
+    color: gold;
+    display:block;
+    text-align: center;
+    font-size: 30px;
+}
+
+footer h1 {
+    color:white;
+    font-size:35px;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+
+footer nav {
+    background-color: navy;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 0;
+    list-style-type: none;
+}
+
+footer nav a {
+    display:block;
+    justify-content: center;
+    color: gold;
+    width: 100px;
+    list-style-type: none;
+    padding: 10px 20px;
+    margin: 0 15px; 
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    list-style-type: none;
+    
+}
+
