@@ -17,7 +17,7 @@ header {
     margin-right: auto;
     justify-content: center;
     padding-top:10px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     display: block;
 }
 
@@ -61,6 +61,8 @@ header h1 {
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 80px;
     color:gold;
+    padding-top:0px;
+    
 }
 
 header p {
@@ -76,7 +78,7 @@ header p {
 
 body h1 {
     color:gold;
-    margin-top:100px;
+    margin-top:50px;
     margin-left:20px;
     margin-bottom:0;
 }
@@ -147,33 +149,47 @@ body a {
 article {
     font-size: 20px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
+    background-color: lightgray;
+    height: 1600px;
 }
 
+article h1 {
+    display: block;
+    position:absolute;
+    position:relative;
+    text-align:center;
+    margin-top:40px;
+    margin-bottom:0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color:navy;
+    padding-top:40px;
+    padding-bottom:40px;
+}
 
 article li {
     width:60%;
     display: block;
     justify-content: center;
     text-align: center;
-    color:gold;
+    color:black;
     margin-left:auto;
     margin-right:auto;
-    background-color: navy;
 
 }
 
 article a {
     font-size:20px;
     color:navy;
-    background-color: gold;
+    background-color: navy;
     margin-bottom:20px
 }
 
 article img {
     height: 400px;
     width: 600px;
-    border: 5px solid gold;
+    border: 5px solid navy;
     margin-top:40px;
     margin-left:20px;
     margin-right:20px;
