@@ -72,6 +72,53 @@ header p {
     color:white;
 }
 
+/* Body */
+body h2 {
+    margin-left: 20px;
+}
+
+body p {
+    margin-left: 20px;
+}
+
+/* Social Media Images/Links */
+article {
+    display: inline-block;
+    margin-top: 200px;
+    font-size: 20px;
+}
+
+article li {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.instagramLogo {
+    display:block;
+    height: 50px;
+    width: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.xtwitterLogo {
+    display: block;
+    height: 50px;
+    width: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.facebookLogo {
+    display: block;
+    height: 50px;
+    width: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 /* Footer */
 footer {
     margin-top:100px;

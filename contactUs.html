@@ -8,7 +8,19 @@
             <meta name="author" content="Will Berry">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="contactUs stylesheet" href="CSS/contactUs.css">
-            <title>About Us - SECJunkies</title>
+            <title>Contact Us - SECJunkies</title>
+
+            <script>
+                function handleSubmit(event) {
+                    event.preventDefault(); // Prevent form from submitting and reloading the page
+                    
+                    // Hide the form
+                    document.getElementById("surveyForm").style.display = "none";
+                    
+                    // Show the thank you message
+                    document.getElementById("thankYouMessage").style.display = "block";
+                }
+            </script>
         </head>
 
         <header>
@@ -22,9 +34,46 @@
                 </nav>
         </header>
 
-        <body>
-
-        </body>
+    <body>
+        <h1>Submit your Feedback/Suggestions</h1>
+        
+        <!-- The form itself -->
+        <form id="surveyForm" action="#" method="post" onsubmit="handleSubmit(event)">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="sec_team">Favorite SEC Team:</label><br>
+            <select id="sec_team" name="sec_team" required>
+                <option value="Alabama">Alabama</option>
+                <option value="Arkansas">Arkansas</option>
+                <option value="Auburn">Auburn</option>
+                <option value="Florida">Florida</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Kentucky">Kentucky</option>
+                <option value="LSU">LSU</option>
+                <option value="Mississippi State">Mississippi State</option>
+                <option value="Missouri">Missouri</option>
+                <option value="Oklahoma">Oklahoma</option>
+                <option value="Ole Miss">Ole Miss</option>
+                <option value="South Carolina">South Carolina</option>
+                <option value="Tennessee">Tennessee</option>
+                <option value="Texas">Texas</option>
+                <option value="Texas A&M">Texas A&M</option>
+                <option value="Vanderbilt">Vanderbilt</option>
+            </select><br><br>
+    
+            <label for="suggestion/feedback">Suggestions/Feedback:</label><br>
+            <textarea id="suggestions" name="suggestions" rows="6" cols="50" placeholder="Please share any feedback or suggestions..." required></textarea><br><br>
+    
+            <input type="submit" value="Submit">
+        </form>
+        
+        <!-- The Thank You message (hidden initially) -->
+        <div id="thankYouMessage" style="display:none;">
+            <h2>Thank you! Your suggestion has been submitted.</h2>
+        </div>
+    
+    </body>
 
         <footer>
             <img class="footerLogo" src="images/SECJunkiesLogo.png" alt="FooterLogo">
