@@ -113,7 +113,7 @@ body p {
 
 .Will {
     margin-left: 20px;
-    background-color: gray;
+    background-color: white;
     width: 25%;
     border: 10px double navy;
     border-radius: 25px;
@@ -125,7 +125,7 @@ body p {
 
 .Will h3 {
     text-align: center;
-    color:white;
+    color:black;
 }
 
 .Will img {
@@ -135,7 +135,7 @@ body p {
 }
 
 .Will p {
-    color:white;
+    color:black;
 }
 
 /* Social Media Images/Links */
