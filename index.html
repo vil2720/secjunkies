@@ -22,40 +22,128 @@
         </header>
             <main>
                 <body>
+                <div class="welcome">
                 <h1> Home </h1>
                     <p>Welcome to SEC Junkies! Here we are are obsessed with the SEC, its history, its present, and its future. If you love the SEC as much as we do, stick around and join the community, follow us on social media, and maybe consider applying to become a Junkie contributor. </p>
+                </div>
             </main>
-                <a class="fblink" href="secfootball.html">SEC Football</a>
+
+            <div class="categories">
+                <h1>Sports:</h1>
+
                 <a href=""><img src="images/secfb.jpg" alt="SEC Football Logo" class="football-logo"></a>
-                
-                <a class="bblink" href="secbasketball.html">SEC Basketball</a>
+
                 <a href=""><img src="images/secbb.jpg" alt="SEC Basketball Logo" class="basketball-logo"></a>
 
-                <a class="bsblink" href="secbaseball.html">SEC Basetball</a>
                 <a href=""><img src="images/secbsb.jpg" alt="SEC Baseball Logo" class="baseball-logo"></a>
-                </body>
+            </div>
 
-                <article>
-                    <h1> Latest Articles:</h1>
-                    <img class="georgia/tenn" src="images/georgia-tenn.png">
-                    <caption><a href="">Baseball: Georgia and Tennessee move to 5-1 in conference play.</a></caption>
-                    <img class="olemiss/isu" src="images/olemis-isu.png">
-                    <caption><a href="">#6 Ole Miss downs #3 Iowa State for a Sweet-16 Berth</a></caption>
-                    <img class="flordia/uconn" src="images/flordia-uconn.png">
-                    <caption><a href="">#1 Florida rallies to beat 2-time defending champs #8 UCONN to advance to the Sweet-16.</a></caption>
-                </article>
+            <div class="articles">
+                <h1> Latest Articles:</h1>
+                <a href="">Baseball: Georgia and Tennessee move to 5-1 in conference play</a>
+                <img src="images/georgia-tenn.png" alt="georgia and tennessee baseball image">
 
+                <a href="">#6 Ole Miss downs #3 Iowa State for a Sweet-16 Berth</a>
+                <img src="images/olemis-isu.png" alt="ole miss and iowa state basketball image">
+
+                <a href="">#1 Florida rallies to beat 2-time defending champs #8 UCONN to advance to the Sweet-16</a>
+                <img src="images/flordia-uconn.png" alt="florida and uconn basketball image">
+                
+            </div>
+
+                <div class="calendar">
+                    <h2 id="monthYear"></h2>
+                    <div class="days">
+                      <div class="day">Sun</div>
+                      <div class="day">Mon</div>
+                      <div class="day">Tue</div>
+                      <div class="day">Wed</div>
+                      <div class="day">Thu</div>
+                      <div class="day">Fri</div>
+                      <div class="day">Sat</div>
+                    </div>
+                    <div class="dates" id="dates"></div>
+                  </div>
+                  
+                  <script>
+                    const datesEl = document.getElementById("dates");
+                    const monthYearEl = document.getElementById("monthYear");
+                  
+                    const today = new Date();
+                    const currentMonth = 4; // May
+                    const currentYear = 2025;
+                  
+                    const firstDay = new Date(currentYear, currentMonth, 1).getDay();
+                    const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+                  
+                    const events = {
+                      6: ["SEC Softball Tournament begins in Athens, GA"],
+                      7: ["SEC Softball Tournament continues"],
+                      8: ["SEC Softball Tournament continues"],
+                      9: ["SEC Softball Tournament continues", "SEC Baseball Tournament begins in Hoover, AL"],
+                      10: ["SEC Softball Tournament Championship", "SEC Baseball Tournament continues"],
+                      11: ["SEC Baseball Tournament continues"],
+                      12: ["SEC Baseball Tournament continues"],
+                      13: ["SEC Baseball Tournament continues"],
+                      14: ["SEC Baseball Tournament continues"],
+                      15: ["SEC Baseball Tournament continues"],
+                      16: ["SEC Baseball Tournament continues"],
+                      17: ["SEC Baseball Tournament continues"],
+                      18: ["SEC Baseball Tournament continues"],
+                      19: ["SEC Baseball Tournament continues"],
+                      20: ["SEC Baseball Tournament continues"],
+                      21: ["SEC Baseball Tournament continues"],
+                      22: ["SEC Baseball Tournament continues"],
+                      23: ["SEC Baseball Tournament continues"],
+                      24: ["SEC Baseball Tournament continues"],
+                      25: ["SEC Baseball Tournament Championship"]
+                    };
+                  
+                    monthYearEl.textContent = `${today.toLocaleString('default', { month: 'long' })} ${currentYear}`;
+                  
+                    // Fill in blank days
+                    for (let i = 0; i < firstDay; i++) {
+                      const emptyCell = document.createElement("div");
+                      datesEl.appendChild(emptyCell);
+                    }
+                  
+                    // Fill in the dates
+                    for (let i = 1; i <= daysInMonth; i++) {
+                      const dateCell = document.createElement("div");
+                      dateCell.className = "date";
+                      if (
+                        i === today.getDate() &&
+                        currentMonth === today.getMonth() &&
+                        currentYear === today.getFullYear()
+                      ) {
+                        dateCell.classList.add("today");
+                      }
+                      dateCell.textContent = i;
+                  
+                      if (events[i]) {
+                        const eventList = document.createElement("div");
+                        eventList.className = "event";
+                        eventList.textContent = events[i].join(", ");
+                        dateCell.appendChild(eventList);
+                      }
+                  
+                      datesEl.appendChild(dateCell);
+                    }
+                  </script>
+                  
+
+            </div>
         </body>
     </main>
-        <footer>
-            <img class="footerLogo" src="images/SECJunkiesLogo.png" alt="FooterLogo">
-            <a class="siteLink" href="SECJunkies.com"> SECJunkies.com</a>
-            <h1>Follow us on Social Media!</h1>
-            <nav>
-                <li><a href="instagram.com"> Instagram</a></li>
-                <li><a href="facebook.com"> Facebook</a></li>
-                <li><a href="x.com"> X/Twitter</a></li>
-            </nav>
-            <h3>Content found on this website is the rights of SEC Junkies and its contributors. </h3>
-        </footer>
+    <footer>
+        <img class="footerLogo" src="images/SECJunkiesLogo.png" alt="FooterLogo">
+        <a class="siteLink" href="SECJunkies.com"> SECJunkies.com</a>
+        <h1>Follow us on Social Media!</h1>
+        <nav>
+            <li><a href="instagram.com"> Instagram</a></li>
+            <li><a href="facebook.com"> Facebook</a></li>
+            <li><a href="x.com"> X/Twitter</a></li>
+        </nav>
+        <h3>Content found on this website is the rights of SEC Junkies and its contributors. </h3>
+    </footer>
 </html>
